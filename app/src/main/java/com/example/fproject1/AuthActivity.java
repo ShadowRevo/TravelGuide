@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class AuthActivity extends AppCompatActivity {
+
     private FirebaseAuth auth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
