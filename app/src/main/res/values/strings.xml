@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FProject1</string>
+    <string name="hello_blank_fragment">Discover top places, local stories, and travel tips in one guide.</string>
+    <string name="general_description_fallback">Discover the story, highlights, and useful tips for this destination.</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.FProject1" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.FProject1" parent="Base.Theme.FProject1" />
+    <style name="ProfileCircleImage" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

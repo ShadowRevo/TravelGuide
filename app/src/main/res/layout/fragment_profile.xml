@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05A058">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/user_icon"
+            android:background="@drawable/circle_white"
+            android:padding="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email@gmail.com"
+            android:textSize="15sp"
+            android:textColor="#E0E0E0"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/btn_change_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Change Username"
+                android:textColor="#05A058"
+                android:backgroundTint="#E8F5E9"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btn_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Change Password"
+                android:textColor="#05A058"
+                android:backgroundTint="#E8F5E9"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Log Out"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#E53935"/>
+            <Button
+                android:id="@+id/btn_delete_account"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Delete Account"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#B00020"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

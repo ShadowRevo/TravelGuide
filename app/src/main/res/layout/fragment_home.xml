@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05A058"
+    android:padding="16dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profileImage"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="#05A058"
+        android:elevation="8dp"
+        android:padding="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user_icon"
+        app:shapeAppearanceOverlay="@style/ProfileCircleImage" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Travel Guide"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_welcome_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:gravity="center"
+            android:text="Welcome!"
+            android:textColor="#EAFBEF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="AI search: cheap city with museums..."
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#DDDDDD"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btn_favorites"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="My Favorites"
+            android:textColor="#05A058"
+            android:backgroundTint="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btn_plan_assistant"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="AI Multi-City Plan"
+            android:textColor="#05A058"
+            android:backgroundTint="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/citiesRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</FrameLayout>
